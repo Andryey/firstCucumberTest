@@ -17,22 +17,36 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.14.0</version>
+            <version>4.32.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+        <!-- https://mvnreposi
+        tory.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.30.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
+            <version>7.22.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
+            <version>7.22.1</version>
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.26.3</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
