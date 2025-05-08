@@ -7,7 +7,7 @@ Feature: SearchFeature This feature should find "Oracle" as one of result Google
     And I collected search results for finding "Oracle"
     Then I find "Oracle"
 
-
+@test
   Scenario: The result doesn't contain unexpected word
     Given I navigate to Google search page
     When I input "Java" to the search textfield
