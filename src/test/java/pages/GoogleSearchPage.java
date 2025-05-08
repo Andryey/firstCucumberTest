@@ -15,16 +15,19 @@ public class GoogleSearchPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how = How.CSS, using = "#lst-ib")
+    @FindBy(how = How.CSS, using = "#L2AGLb")
+    public WebElement confirmCookiesBtn;
+
+    @FindBy(how = How.CSS, using = "textarea[name=q]")
     public WebElement searchTextField;
 
-    @FindAll(@FindBy(how = How.CSS, using = "#rso > div > div > div > div > div > div > div > span"))
-    private List<WebElement> pageResultElements;
+    @FindAll(@FindBy(how = How.CSS, using = "#rso > div > div > div > div:nth-child(2) > div > span"))
+    public List<WebElement> pageResultElements;
 
-    @FindBy(how = How.CSS, using = "#pnnext")
+    @FindBy(how = How.CSS, using = "#pnnext > span:nth-child(2)")
     public WebElement searchResultsPageLinkNext;
 
-    public void checkResultsOnThePage(StringBuilder sb) {
+    public void getResultsOnThePage(StringBuilder sb) {
         for (WebElement element : pageResultElements) {
             sb.append(element.getText());
         }
